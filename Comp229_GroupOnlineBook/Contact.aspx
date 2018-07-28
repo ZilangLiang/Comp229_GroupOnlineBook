@@ -1,17 +1,31 @@
 ﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="Comp229_GroupOnlineBook.Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
-    <h3>Your contact page.</h3>
-    <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
-        <abbr title="Phone">P:</abbr>
-        425.555.0100
-    </address>
-
-    <address>
-        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-    </address>
+    <div>
+        <table style="width: 90%; margin-top: 50px; margin-left: 150px;">
+            <tr>
+                <td>
+                    <asp:Label runat="server" Text="First Name"></asp:Label></td>
+                <td>
+                    <asp:TextBox runat="server"></asp:TextBox></td>
+                <td colspan="3" rowspan="3">
+                    <asp:TextBox runat="server" TextMode="MultiLine" Text="Comments*" Width="300px" Height="200px"></asp:TextBox></td>
+            </tr>
+            <tr>
+                <td style="height: 22px">
+                    <asp:Label runat="server" Text="Last Name"></asp:Label></td>
+                <td style="height: 22px">
+                    <asp:TextBox runat="server"></asp:TextBox></td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label runat="server" Text="Email"></asp:Label></td>
+                <td>
+                    <asp:TextBox runat="server"></asp:TextBox></td>
+            </tr>
+        </table>
+        <div style="text-align: center; margin-left: auto; margin-right: auto;">
+            <asp:Button runat="server" Text="Submit" />
+        </div>
+    </div>
 </asp:Content>

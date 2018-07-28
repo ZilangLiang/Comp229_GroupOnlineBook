@@ -12,7 +12,7 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
@@ -52,9 +52,26 @@
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
+                        <li><a runat="server" href="~/News">News</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>
                     </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a runat="server" href="~/Account/Login">Login</a></li>
+                        <li><a href="~/Account/Register" runat="server">Register</a></li>
+                    </ul>
                 </div>
+            </div>
+        </div>
+        <div>
+            <h2 style="text-align: center; font-size: 40px;">Application Name</h2>
+            <div id="menu" style="text-align: center; margin-left: 300px; color: lightskyblue;">
+                <link href="StyleSheet1.css" rel="stylesheet" />
+                <ul>
+                    <li><a href="~/Math">Math Books</a></li>
+                    <li><a href="~/ESL">ESL Books</a></li>
+                    <li><a href="~/Computer">Computer Books</a></li>
+                    <li><a href="~/Art">Art Books</a></li>
+                </ul>
             </div>
         </div>
         <div class="container body-content">
