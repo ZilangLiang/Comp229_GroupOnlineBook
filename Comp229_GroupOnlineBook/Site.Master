@@ -56,8 +56,8 @@
                         <li><a runat="server" href="~/Contact">Contact</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a runat="server" href="~/Account/Login">Login</a></li>
-                        <li><a href="~/Account/Register" runat="server">Register</a></li>
+                        <li><a runat="server" href="~/Login">Login</a></li>
+                        <li><a href="~/Register" runat="server">Register</a></li>
                     </ul>
                 </div>
             </div>
